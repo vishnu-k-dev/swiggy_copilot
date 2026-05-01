@@ -1,51 +1,51 @@
-# 🚀 Swiggy Voice Copilot
+# Swiggy Voice Copilot
 
-A conversational AI copilot that enables users to discover and order food, groceries, and dining experiences from Swiggy using **voice or natural language**.
-
----
-
-## 💡 Overview
-
-Swiggy Voice Copilot reduces ordering friction by replacing browsing-heavy flows with a simple conversational interface.
-
-Instead of navigating menus, users can simply say:
-> “cheap veg dinner”  
-> “get me milk, eggs, and bread”  
-> “book a table for 2 tonight”
+A conversational AI copilot that enables users to discover and order food, groceries, and dining experiences from Swiggy using voice or natural language.
 
 ---
 
-## 🎯 Problem
+## Overview
 
-- Users spend **2–5 minutes** browsing before ordering  
-- High **decision fatigue → drop-offs**  
-- Non-tech users and older users struggle with app navigation  
+Swiggy Voice Copilot reduces ordering friction by replacing browsing-heavy flows with a simple conversational interface. 
 
----
-
-## ⚡ Solution
-
-A WhatsApp-style AI copilot that:
-- Understands user intent (voice/text)
-- Fetches real-time results (simulated)
-- Returns **ranked, decision-ready options**
-- Enables **low-friction ordering flows**
+Instead of navigating complex menus, users can express their intent directly:
+> "cheap veg dinner"
+> "get me milk, eggs, and bread"
+> "book a table for 2 tonight"
 
 ---
 
-## 🔥 Features
+## Problem Statement
 
-- 🎤 Voice + text input  
-- 🧠 Intent parsing (budget, cuisine, preferences)  
-- ⚡ Top 3 ranked recommendations  
-- 🔁 “Repeat last order” flow  
-- 🛒 Instamart-style grocery cart simulation  
-- 🍽️ Dineout-style table discovery simulation  
-- 💬 Conversational UX (WhatsApp-like)
+- Users often spend several minutes browsing before making a purchase.
+- High decision fatigue can lead to user drop-offs.
+- Non-technical and elderly users may struggle with traditional application navigation.
 
 ---
 
-## 🏗️ Architecture
+## Solution
+
+A chat-based AI copilot interface that:
+- Understands user intent via voice or text input.
+- Fetches and processes results in real-time.
+- Returns ranked, decision-ready options to streamline the process.
+- Enables low-friction, intuitive ordering flows.
+
+---
+
+## Key Features
+
+- **Voice and Text Input**: Seamlessly process natural language.
+- **Intent Parsing**: Intelligently capture budget, cuisine, and dietary preferences.
+- **Ranked Recommendations**: Curate the top 3 optimal options.
+- **Order Replication**: Provide a fast "repeat last order" sequence.
+- **Instamart Simulation**: Streamlined grocery cart capabilities.
+- **Dineout Simulation**: Table discovery and reservation assistance.
+- **Conversational UX**: State-driven messaging architecture.
+
+---
+
+## Architecture
 
 ```text
 User (Voice/Text)
@@ -56,64 +56,41 @@ Backend (Node.js)
 ↓
 Intent Parser
 ↓
-Mock Swiggy APIs (Food / Instamart / Dineout)
+Swiggy APIs (Food / Instamart / Dineout)
 ↓
 Ranked Response
 ```
 
 ---
 
-## 🧪 Demo Flows
+## Technology Stack
 
-### 1. Food Ordering
-> “cheap veg dinner” → top 3 options
-
-### 2. Repeat Order
-> “same as yesterday” → instant reorder
-
-### 3. Instamart
-> “milk, eggs, bread” → auto cart
-
-### 4. Dineout
-> “table for 2 tonight” → restaurant suggestions
+- **Backend**: Node.js, Express
+- **Frontend**: Vanilla JavaScript
+- **Voice Integration**: Browser Speech API
+- **Data Layer**: JSON Mock Dataset
 
 ---
 
-## ⚙️ Tech Stack
+## Compliance and Safety
 
-- Node.js (Express)
-- Vanilla JS (Frontend)
-- Browser Speech API (Voice)
-- Mock dataset (simulating Swiggy APIs)
-
----
-
-## 🔐 Compliance & Safety
-
-- No scraping or external data extraction  
-- No price hallucination (all values from dataset)  
-- Clear attribution: “Powered by Swiggy”  
-- No storage of sensitive user data  
+- **Data Integrity**: No scraping or unauthorized external data extraction.
+- **Pricing Accuracy**: No hallucination; all values are strictly derived from the provided dataset.
+- **Attribution**: Clear indications where content is powered by Swiggy.
+- **Privacy**: Strict adherence to data privacy; no storage of sensitive user information.
 
 ---
 
-## 🚀 Future Scope
+## Future Scope
 
-- Integration with Swiggy MCP APIs  
-- WhatsApp Business API deployment  
-- Real-time order placement & payments  
-- Personalization using user history  
-- Multilingual voice support  
-
----
-
-## 🎯 Vision
-
-To transform Swiggy from a browsing-based app  
-into a **conversational commerce platform**.
+- Integration with the official Swiggy MCP APIs.
+- Deployment on the WhatsApp Business API.
+- Live order placement and payment gateway integration.
+- Intelligent personalization using user order history.
+- Multilingual natural language support.
 
 ---
 
-## 👤 Author
+## Author
 
 Vishnu K
