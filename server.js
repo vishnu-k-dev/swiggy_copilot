@@ -227,4 +227,12 @@ app.post("/chat", (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("Running on http://localhost:3000"));
+// For local development
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => console.log(`Running on http://localhost:${PORT}`));
+}
+
+// Export for Vercel
+module.exports = app;
+
