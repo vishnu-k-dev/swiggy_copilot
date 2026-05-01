@@ -1,14 +1,14 @@
 # Swiggy Voice Copilot
 
-A conversational AI copilot that enables users to discover and order food, groceries, and dining experiences from Swiggy using voice or natural language.
+A WhatsApp-first conversational AI copilot that enables users to discover and order food, groceries, and dining experiences from Swiggy using voice or natural language.
 
 ---
 
 ## Overview
 
-Swiggy Voice Copilot reduces ordering friction by replacing browsing-heavy flows with a simple conversational interface. 
+Swiggy Voice Copilot reduces ordering friction by replacing browsing-heavy flows with a simple conversational interface accessible directly within WhatsApp. 
 
-Instead of navigating complex menus, users can express their intent directly:
+With over 500 million active WhatsApp users in India, this integration completely removes the barrier of application installation and navigation. Instead of browsing complex menus, users can express their intent directly in their everyday chat application:
 > "cheap veg dinner"
 > "get me milk, eggs, and bread"
 > "book a table for 2 tonight"
@@ -19,38 +19,40 @@ Instead of navigating complex menus, users can express their intent directly:
 
 - Users often spend several minutes browsing before making a purchase.
 - High decision fatigue can lead to user drop-offs.
-- Non-technical and elderly users may struggle with traditional application navigation.
+- Non-technical and elderly users struggle with traditional application navigation but are highly comfortable using WhatsApp.
+- App-fatigue prevents occasional users from installing or keeping the native Swiggy application.
 
 ---
 
 ## Solution
 
-A chat-based AI copilot interface that:
-- Understands user intent via voice or text input.
+A WhatsApp-based AI copilot interface that:
+- Resides natively within WhatsApp, maximizing reach and accessibility.
+- Understands user intent via voice notes or text input.
 - Fetches and processes results in real-time.
 - Returns ranked, decision-ready options to streamline the process.
-- Enables low-friction, intuitive ordering flows.
+- Enables low-friction, intuitive ordering flows directly in the chat.
 
 ---
 
 ## Key Features
 
-- **Voice and Text Input**: Seamlessly process natural language.
+- **WhatsApp Native Interface**: Accessible without app installation.
+- **Voice and Text Input**: Seamlessly process natural language and voice notes.
 - **Intent Parsing**: Intelligently capture budget, cuisine, and dietary preferences.
-- **Ranked Recommendations**: Curate the top 3 optimal options.
+- **Ranked Recommendations**: Curate the top 3 optimal options to prevent choice paralysis.
 - **Order Replication**: Provide a fast "repeat last order" sequence.
 - **Instamart Simulation**: Streamlined grocery cart capabilities.
 - **Dineout Simulation**: Table discovery and reservation assistance.
-- **Conversational UX**: State-driven messaging architecture.
 
 ---
 
 ## Architecture
 
 ```text
-User (Voice/Text)
+User (WhatsApp Voice/Text)
 ↓
-Frontend (Chat UI)
+WhatsApp Business API
 ↓
 Backend (Node.js)
 ↓
@@ -58,7 +60,7 @@ Intent Parser
 ↓
 Swiggy APIs (Food / Instamart / Dineout)
 ↓
-Ranked Response
+Ranked Response via WhatsApp
 ```
 
 ---
@@ -66,9 +68,8 @@ Ranked Response
 ## Technology Stack
 
 - **Backend**: Node.js, Express
-- **Frontend**: Vanilla JavaScript
-- **Voice Integration**: Browser Speech API
-- **Data Layer**: JSON Mock Dataset
+- **Integration Layer**: WhatsApp Business API (Target)
+- **Data Layer**: JSON Mock Dataset (Simulating Swiggy APIs)
 
 ---
 
@@ -83,11 +84,11 @@ Ranked Response
 
 ## Future Scope
 
-- Integration with the official Swiggy MCP APIs.
-- Deployment on the WhatsApp Business API.
-- Live order placement and payment gateway integration.
+- Full integration with the official Swiggy MCP APIs.
+- Official deployment on the WhatsApp Business API.
+- Live order placement and UPI payment gateway integration within WhatsApp.
 - Intelligent personalization using user order history.
-- Multilingual natural language support.
+- Multilingual natural language support to serve diverse demographics.
 
 ---
 
